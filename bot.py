@@ -131,7 +131,10 @@ app = ApplicationBuilder().token(TOKEN).build()
 app.add_handler(CommandHandler("start", start))
 app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
 
-app.job_queue.run_once(lambda ctx: asyncio.create_task(send_signals(app)), 1)
+import threading
+import asyncio
+
+threading.Thread(target=lambda: asyncio.run(send_signals(app))).start()
 
 print("Bot running...")
 app.run_polling()
