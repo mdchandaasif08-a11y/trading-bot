@@ -8,8 +8,11 @@ from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, fil
 
 # ===== SETTINGS =====
 TOKEN = "8718378709:AAFzoUzG3so7JF0SCpVN7qTdNHaZvBAn8QM"
+
 API_KEY = "d5ae0f61032849f0bf0e943dbccb85a4"
+
 CHAT _ID = "6181352243"
+
 ALLOWED_IDS = ["129634078"]
 
 users = {}
