@@ -14,8 +14,7 @@ ALLOWED_IDS = ["129634078"]  # yahan apne trade IDs add karo
 
 users = {}
 
-PAIRS = ["EURUSD", "GBPUSD", "USDJPY", "AUDUSD", "USDCAD"] 
- PAIRS = ["EURUSD"OTC, "GBPUSD"OTC, "PAKUSD"OTC" ]
+PAIRS = ["EURUSD", "GBPUSD", "USDJPY", "AUDUSD", "USDCAD"]
 
 # ===== START COMMAND =====
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
